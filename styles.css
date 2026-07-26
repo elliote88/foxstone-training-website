@@ -23,3 +23,48 @@ footer{text-align:center;padding:40px;background:#071126;color:#fff}
 .actions{justify-content:center}
 nav{display:none}
 }
+.page{
+
+max-width:900px;
+
+margin:150px auto;
+
+padding:0 30px;
+
+line-height:1.8;
+
+}
+
+.page h1{
+
+font-size:3rem;
+
+margin-bottom:30px;
+
+color:#24385f;
+
+}
+
+.page h2{
+
+margin-top:50px;
+
+margin-bottom:15px;
+
+color:#24385f;
+
+}
+
+.page ul{
+
+padding-left:25px;
+
+margin-top:10px;
+
+}
+
+.page li{
+
+margin-bottom:10px;
+
+}
