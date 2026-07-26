@@ -1,43 +1,177 @@
-/* Foxstone Training Website */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f5;
-    color: #222;
-    line-height: 1.6;
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#ffffff;
+    color:#222;
 }
 
-header {
-    background: #b71c1c;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#071126;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.logo{
+    height:55px;
 }
 
-header p {
-    font-size: 1.2rem;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:35px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-main {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
+nav a:hover{
+    color:#ff7a00;
 }
 
-section {
-    background: white;
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+.hero{
+    margin-top:95px;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 8%;
+    gap:60px;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-right{
+    flex:1;
+    text-align:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:700px;
+}
+
+.tagline{
+    color:#ff7a00;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:68px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.orange{
+    color:#ff7a00;
+}
+
+.hero p{
+    font-size:21px;
+    color:#555;
+    margin-bottom:40px;
+    max-width:600px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    padding:16px 34px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.primary{
+    background:#ff7a00;
+    color:white;
+}
+
+.secondary{
+    border:2px solid #071126;
+    color:#071126;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.features{
+    padding:80px 8%;
+    background:#f7f7f7;
+}
+
+.features h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+footer{
+    background:#071126;
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.buttons{
+justify-content:center;
+}
+
+nav{
+display:none;
+}
+
 }
